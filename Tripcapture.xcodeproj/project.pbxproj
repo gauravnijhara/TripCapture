@@ -7,14 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		598C59891A260F9E8A747FF2 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA651E3C9A68AB96795D294C /* Pods.framework */; };
+		960F4DC81C3F91AA004E841E /* galleryIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 960F4DC61C3F91AA004E841E /* galleryIcon.png */; };
+		960F4DC91C3F91AA004E841E /* galleryIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 960F4DC71C3F91AA004E841E /* galleryIcon@2x.png */; };
+		960F4DCC1C410357004E841E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960F4DCB1C410357004E841E /* MapViewController.swift */; };
+		961FBF2B1C3613F500D8F7ED /* FB_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 961FBF291C3613F500D8F7ED /* FB_Button.png */; };
+		961FBF2C1C3613F500D8F7ED /* FB_Button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 961FBF2A1C3613F500D8F7ED /* FB_Button@2x.png */; };
+		961FBF331C3772A200D8F7ED /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FBF321C3772A200D8F7ED /* LoginViewController.swift */; };
+		961FBF351C377A1A00D8F7ED /* TripsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FBF341C377A1A00D8F7ED /* TripsListViewController.swift */; };
+		96542FCF1C338B85003FA481 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96542FCD1C338B85003FA481 /* Photos.framework */; };
+		96542FD01C338B85003FA481 /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96542FCE1C338B85003FA481 /* PhotosUI.framework */; };
+		96542FD21C339C3D003FA481 /* Trip.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96542FD11C339C3D003FA481 /* Trip.plist */; };
+		96542FD41C339C68003FA481 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96542FD31C339C68003FA481 /* DataManager.swift */; };
+		968F7FB01C377E3200E784C8 /* CreateNewTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968F7FAF1C377E3200E784C8 /* CreateNewTripViewController.swift */; };
+		968F7FB21C37B52900E784C8 /* TripData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968F7FB11C37B52900E784C8 /* TripData.swift */; };
+		968F7FB41C37B53E00E784C8 /* LocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968F7FB31C37B53E00E784C8 /* LocationData.swift */; };
 		96A3BDFF1C2E993D00ADAF29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A3BDFE1C2E993D00ADAF29 /* AppDelegate.swift */; };
 		96A3BE011C2E993D00ADAF29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A3BE001C2E993D00ADAF29 /* ViewController.swift */; };
 		96A3BE041C2E993D00ADAF29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A3BE021C2E993D00ADAF29 /* Main.storyboard */; };
 		96A3BE061C2E993D00ADAF29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96A3BE051C2E993D00ADAF29 /* Assets.xcassets */; };
 		96A3BE091C2E993D00ADAF29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A3BE071C2E993D00ADAF29 /* LaunchScreen.storyboard */; };
+		96A3BE111C2E9D3400ADAF29 /* RootTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A3BE101C2E9D3400ADAF29 /* RootTabBarViewController.swift */; };
+		96A3BE131C2E9E6500ADAF29 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A3BE121C2E9E6500ADAF29 /* CameraViewController.swift */; };
+		96A3BE191C2F924B00ADAF29 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A3BE181C2F924B00ADAF29 /* LocationManager.swift */; };
+		96A3BE1B1C2F943900ADAF29 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A3BE1A1C2F943900ADAF29 /* CoreLocation.framework */; };
+		96A3BE211C2FB76000ADAF29 /* acceptIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A3BE1D1C2FB76000ADAF29 /* acceptIcon.png */; };
+		96A3BE221C2FB76000ADAF29 /* acceptIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A3BE1E1C2FB76000ADAF29 /* acceptIcon@2x.png */; };
+		96A3BE231C2FB76000ADAF29 /* discardIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A3BE1F1C2FB76000ADAF29 /* discardIcon.png */; };
+		96A3BE241C2FB76000ADAF29 /* discardIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A3BE201C2FB76000ADAF29 /* discardIcon@2x.png */; };
+		96A3BE291C2FDAC700ADAF29 /* acceptIcon_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A3BE251C2FDAC700ADAF29 /* acceptIcon_selected.png */; };
+		96A3BE2A1C2FDAC700ADAF29 /* acceptIcon_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A3BE261C2FDAC700ADAF29 /* acceptIcon_selected@2x.png */; };
+		96A3BE2B1C2FDAC700ADAF29 /* discardIcon_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A3BE271C2FDAC700ADAF29 /* discardIcon_selected.png */; };
+		96A3BE2C1C2FDAC700ADAF29 /* discardIcon_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A3BE281C2FDAC700ADAF29 /* discardIcon_selected@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7740C52A03F2A6458D8BB2C6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		960F4DC61C3F91AA004E841E /* galleryIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = galleryIcon.png; sourceTree = "<group>"; };
+		960F4DC71C3F91AA004E841E /* galleryIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "galleryIcon@2x.png"; sourceTree = "<group>"; };
+		960F4DCB1C410357004E841E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		961FBF261C3551A000D8F7ED /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		961FBF291C3613F500D8F7ED /* FB_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FB_Button.png; sourceTree = "<group>"; };
+		961FBF2A1C3613F500D8F7ED /* FB_Button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FB_Button@2x.png"; sourceTree = "<group>"; };
+		961FBF321C3772A200D8F7ED /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		961FBF341C377A1A00D8F7ED /* TripsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripsListViewController.swift; sourceTree = "<group>"; };
+		96542FCD1C338B85003FA481 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		96542FCE1C338B85003FA481 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
+		96542FD11C339C3D003FA481 /* Trip.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Trip.plist; path = ../Trip.plist; sourceTree = "<group>"; };
+		96542FD31C339C68003FA481 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		968F7FAF1C377E3200E784C8 /* CreateNewTripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewTripViewController.swift; sourceTree = "<group>"; };
+		968F7FB11C37B52900E784C8 /* TripData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripData.swift; sourceTree = "<group>"; };
+		968F7FB31C37B53E00E784C8 /* LocationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationData.swift; sourceTree = "<group>"; };
 		96A3BDFB1C2E993D00ADAF29 /* Tripcapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tripcapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A3BDFE1C2E993D00ADAF29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96A3BE001C2E993D00ADAF29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +65,20 @@
 		96A3BE051C2E993D00ADAF29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96A3BE081C2E993D00ADAF29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96A3BE0A1C2E993D00ADAF29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96A3BE101C2E9D3400ADAF29 /* RootTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabBarViewController.swift; sourceTree = "<group>"; };
+		96A3BE121C2E9E6500ADAF29 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		96A3BE181C2F924B00ADAF29 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		96A3BE1A1C2F943900ADAF29 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		96A3BE1D1C2FB76000ADAF29 /* acceptIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = acceptIcon.png; sourceTree = "<group>"; };
+		96A3BE1E1C2FB76000ADAF29 /* acceptIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "acceptIcon@2x.png"; sourceTree = "<group>"; };
+		96A3BE1F1C2FB76000ADAF29 /* discardIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = discardIcon.png; sourceTree = "<group>"; };
+		96A3BE201C2FB76000ADAF29 /* discardIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "discardIcon@2x.png"; sourceTree = "<group>"; };
+		96A3BE251C2FDAC700ADAF29 /* acceptIcon_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = acceptIcon_selected.png; sourceTree = "<group>"; };
+		96A3BE261C2FDAC700ADAF29 /* acceptIcon_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "acceptIcon_selected@2x.png"; sourceTree = "<group>"; };
+		96A3BE271C2FDAC700ADAF29 /* discardIcon_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = discardIcon_selected.png; sourceTree = "<group>"; };
+		96A3BE281C2FDAC700ADAF29 /* discardIcon_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "discardIcon_selected@2x.png"; sourceTree = "<group>"; };
+		B40074A564FFBC222B877235 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		EA651E3C9A68AB96795D294C /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +86,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96542FCF1C338B85003FA481 /* Photos.framework in Frameworks */,
+				96542FD01C338B85003FA481 /* PhotosUI.framework in Frameworks */,
+				96A3BE1B1C2F943900ADAF29 /* CoreLocation.framework in Frameworks */,
+				598C59891A260F9E8A747FF2 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00082BB7503C059CF0C1818C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA651E3C9A68AB96795D294C /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		080E455D62C39F7EB0E50A32 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B40074A564FFBC222B877235 /* Pods.debug.xcconfig */,
+				7740C52A03F2A6458D8BB2C6 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		96A3BDF21C2E993D00ADAF29 = {
 			isa = PBXGroup;
 			children = (
+				96542FCD1C338B85003FA481 /* Photos.framework */,
+				96542FCE1C338B85003FA481 /* PhotosUI.framework */,
+				96A3BE1A1C2F943900ADAF29 /* CoreLocation.framework */,
 				96A3BDFD1C2E993D00ADAF29 /* Tripcapture */,
 				96A3BDFC1C2E993D00ADAF29 /* Products */,
+				080E455D62C39F7EB0E50A32 /* Pods */,
+				00082BB7503C059CF0C1818C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +143,40 @@
 				96A3BE051C2E993D00ADAF29 /* Assets.xcassets */,
 				96A3BE071C2E993D00ADAF29 /* LaunchScreen.storyboard */,
 				96A3BE0A1C2E993D00ADAF29 /* Info.plist */,
+				96A3BE101C2E9D3400ADAF29 /* RootTabBarViewController.swift */,
+				96A3BE121C2E9E6500ADAF29 /* CameraViewController.swift */,
+				961FBF321C3772A200D8F7ED /* LoginViewController.swift */,
+				961FBF341C377A1A00D8F7ED /* TripsListViewController.swift */,
+				968F7FAF1C377E3200E784C8 /* CreateNewTripViewController.swift */,
+				960F4DCB1C410357004E841E /* MapViewController.swift */,
+				968F7FB11C37B52900E784C8 /* TripData.swift */,
+				968F7FB31C37B53E00E784C8 /* LocationData.swift */,
+				96A3BE181C2F924B00ADAF29 /* LocationManager.swift */,
+				96542FD31C339C68003FA481 /* DataManager.swift */,
+				96A3BE1C1C2FB76000ADAF29 /* Resources */,
+				961FBF261C3551A000D8F7ED /* Bridging-Header.h */,
 			);
 			path = Tripcapture;
+			sourceTree = "<group>";
+		};
+		96A3BE1C1C2FB76000ADAF29 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				960F4DC61C3F91AA004E841E /* galleryIcon.png */,
+				960F4DC71C3F91AA004E841E /* galleryIcon@2x.png */,
+				961FBF291C3613F500D8F7ED /* FB_Button.png */,
+				961FBF2A1C3613F500D8F7ED /* FB_Button@2x.png */,
+				96542FD11C339C3D003FA481 /* Trip.plist */,
+				96A3BE251C2FDAC700ADAF29 /* acceptIcon_selected.png */,
+				96A3BE261C2FDAC700ADAF29 /* acceptIcon_selected@2x.png */,
+				96A3BE271C2FDAC700ADAF29 /* discardIcon_selected.png */,
+				96A3BE281C2FDAC700ADAF29 /* discardIcon_selected@2x.png */,
+				96A3BE1D1C2FB76000ADAF29 /* acceptIcon.png */,
+				96A3BE1E1C2FB76000ADAF29 /* acceptIcon@2x.png */,
+				96A3BE1F1C2FB76000ADAF29 /* discardIcon.png */,
+				96A3BE201C2FB76000ADAF29 /* discardIcon@2x.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 96A3BE0D1C2E993D00ADAF29 /* Build configuration list for PBXNativeTarget "Tripcapture" */;
 			buildPhases = (
+				E53D088B137035783F08405C /* Check Pods Manifest.lock */,
 				96A3BDF71C2E993D00ADAF29 /* Sources */,
 				96A3BDF81C2E993D00ADAF29 /* Frameworks */,
 				96A3BDF91C2E993D00ADAF29 /* Resources */,
+				5D2F8C00EC91BD898FFB147B /* Embed Pods Frameworks */,
+				31EEC9632B0C7FB5F1119515 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,20 +240,91 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96A3BE2C1C2FDAC700ADAF29 /* discardIcon_selected@2x.png in Resources */,
+				96A3BE2B1C2FDAC700ADAF29 /* discardIcon_selected.png in Resources */,
 				96A3BE091C2E993D00ADAF29 /* LaunchScreen.storyboard in Resources */,
+				96A3BE231C2FB76000ADAF29 /* discardIcon.png in Resources */,
+				961FBF2C1C3613F500D8F7ED /* FB_Button@2x.png in Resources */,
 				96A3BE061C2E993D00ADAF29 /* Assets.xcassets in Resources */,
+				961FBF2B1C3613F500D8F7ED /* FB_Button.png in Resources */,
+				96A3BE291C2FDAC700ADAF29 /* acceptIcon_selected.png in Resources */,
+				960F4DC91C3F91AA004E841E /* galleryIcon@2x.png in Resources */,
+				96A3BE221C2FB76000ADAF29 /* acceptIcon@2x.png in Resources */,
+				96A3BE241C2FB76000ADAF29 /* discardIcon@2x.png in Resources */,
+				96A3BE211C2FB76000ADAF29 /* acceptIcon.png in Resources */,
+				96A3BE2A1C2FDAC700ADAF29 /* acceptIcon_selected@2x.png in Resources */,
 				96A3BE041C2E993D00ADAF29 /* Main.storyboard in Resources */,
+				96542FD21C339C3D003FA481 /* Trip.plist in Resources */,
+				960F4DC81C3F91AA004E841E /* galleryIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31EEC9632B0C7FB5F1119515 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D2F8C00EC91BD898FFB147B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E53D088B137035783F08405C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		96A3BDF71C2E993D00ADAF29 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				961FBF331C3772A200D8F7ED /* LoginViewController.swift in Sources */,
 				96A3BE011C2E993D00ADAF29 /* ViewController.swift in Sources */,
+				96542FD41C339C68003FA481 /* DataManager.swift in Sources */,
+				96A3BE131C2E9E6500ADAF29 /* CameraViewController.swift in Sources */,
+				968F7FB21C37B52900E784C8 /* TripData.swift in Sources */,
+				96A3BE191C2F924B00ADAF29 /* LocationManager.swift in Sources */,
+				968F7FB01C377E3200E784C8 /* CreateNewTripViewController.swift in Sources */,
+				960F4DCC1C410357004E841E /* MapViewController.swift in Sources */,
+				961FBF351C377A1A00D8F7ED /* TripsListViewController.swift in Sources */,
+				96A3BE111C2E9D3400ADAF29 /* RootTabBarViewController.swift in Sources */,
+				968F7FB41C37B53E00E784C8 /* LocationData.swift in Sources */,
 				96A3BDFF1C2E993D00ADAF29 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,23 +434,29 @@
 		};
 		96A3BE0E1C2E993D00ADAF29 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B40074A564FFBC222B877235 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Tripcapture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GN.Tripcapture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Tripcapture/Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		96A3BE0F1C2E993D00ADAF29 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7740C52A03F2A6458D8BB2C6 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Tripcapture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GN.Tripcapture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Tripcapture/Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -284,6 +479,7 @@
 				96A3BE0F1C2E993D00ADAF29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

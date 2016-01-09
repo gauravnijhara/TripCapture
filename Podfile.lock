@@ -1,0 +1,35 @@
+PODS:
+  - Bolts (1.5.1):
+    - Bolts/AppLinks (= 1.5.1)
+    - Bolts/Tasks (= 1.5.1)
+  - Bolts/AppLinks (1.5.1):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.5.1)
+  - FBSDKCoreKit (4.9.0-beta2):
+    - Bolts (~> 1.5)
+  - FBSDKLoginKit (4.9.0-beta2):
+    - FBSDKCoreKit (~> 4.9.0-beta)
+  - GoogleMaps (1.11.1)
+  - Parse (1.11.0):
+    - Bolts/Tasks (~> 1.5)
+  - ParseFacebookUtilsV4 (1.10.0):
+    - Bolts/Tasks (>= 1.5)
+    - FBSDKCoreKit (~> 4.9.0-beta)
+    - FBSDKLoginKit (~> 4.9.0-beta)
+    - FBSDKTVOSKit (~> 4.9.0-beta)
+    - Parse (~> 1.11)
+
+DEPENDENCIES:
+  - GoogleMaps
+  - Parse
+  - ParseFacebookUtilsV4
+
+SPEC CHECKSUMS:
+  Bolts: a12663244b1d3351c738882e71902fc74db54f64
+  FBSDKCoreKit: d49cbf69741e3c5732166ec9ff4cbd9b288dd53e
+  FBSDKLoginKit: d32e83c0d2d39ef74a942543cacae2dc4de7d088
+  GoogleMaps: c947160008f414c66707a5ea60f35e92055c7670
+  Parse: 886af46a0a677402f6374bb97ac212e795f70afe
+  ParseFacebookUtilsV4: 3cd2d2d69653bad40c8c58131b935c353a0f3f15
+
+COCOAPODS: 0.39.0

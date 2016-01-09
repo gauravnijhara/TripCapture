@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Parse
+import ParseFacebookUtilsV4
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,9 +18,49 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        return true
+        
+        Parse.setApplicationId("XKceBMFjYIQM0yPrePJI2s1GAwBEyl8TgCx7X2ru",
+            clientKey: "N988y8vk5L8YJ8vUfdgZ4DEm1x1ikRDWBPnfyCBM")
+
+        //fetch init location or permissions if not allowed
+        LocationManager.sharedInstance.getCurrentLocation();
+        
+//        self.window = [[UIWindow alloc]
+//            initWithFrame:[[UIScreen mainScreen] bounds]];
+//        // Override point for customization after application launch.
+//        self.window.backgroundColor = [UIColor whiteColor];
+//        [self.window makeKeyAndVisible];
+        
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds);
+        self.window?.backgroundColor = UIColor.whiteColor();
+        
+        if NSUserDefaults.standardUserDefaults().integerForKey("loginFirstTime") == 0
+        {
+            // do onboarding
+            self.window?.rootViewController = UIStoryboard(name:"Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("onboardingNavVC");
+        }
+        else
+        {
+            // launch app with logged in user
+            self.window?.rootViewController = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("rootTabBarVC");
+
+        }
+        
+        self.window?.makeKeyAndVisible();
+        
+        PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(launchOptions);
+        
+        return true;
+        
+        
     }
 
+    func application(application: UIApplication,openURL url: NSURL,sourceApplication: String?,annotation: AnyObject?) -> Bool {
+            
+        return FBSDKApplicationDelegate.sharedInstance().application(application,openURL: url,sourceApplication: sourceApplication,annotation: annotation);
+        
+    }
+    
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
